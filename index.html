@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>스파크플러스 | 랜선 AI 바캉스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 헤더 / 배너 -->
+  <header class="hero">
+    <div class="hero-content">
+      <span class="badge">스파크플러스 입주사 한정 이벤트</span>
+      <h1>🏝️ 랜선 AI 바캉스</h1>
+      <p>"여름 휴가 못 가셨다면, AI로 나만의 랜선 바캉스를 떠나보세요!"</p>
+      <a href="#upload-section" class="btn-primary">작품 제출하기</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- 경품 안내 영역 (Placeholder) -->
+    <section class="prize-section">
+      <h2>🎁 이벤트 경품 안내</h2>
+      <p class="prize-subtitle">멋진 작품을 출품하고 투표를 받은 분들께 푸짐한 선물 제공!</p>
+      <div class="prize-grid">
+        <div class="prize-card">
+          <div class="prize-rank">🥇 1등 (최우수상)</div>
+          <div class="prize-placeholder">경품 공개 예정</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">🥈 2등 (우수상)</div>
+          <div class="prize-placeholder">경품 공개 예정</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">🥉 3등 (인기상)</div>
+          <div class="prize-placeholder">경품 공개 예정</div>
+        </div>
+        <div class="prize-card">
+          <div class="prize-rank">🍹 참가상</div>
+          <div class="prize-placeholder">추첨 경품 공개 예정</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 작품 응모 폼 -->
+    <section id="upload-section" class="form-section">
+      <h2>🎨 내 AI 바캉스 작품 올리기</h2>
+      <form id="event-form">
+        <div class="form-grid">
+          <div class="form-group">
+            <label>입주사명 *</label>
+            <input type="text" id="company" required placeholder="예: 스파크플러스">
+          </div>
+          <div class="form-group">
+            <label>이름 *</label>
+            <input type="text" id="name" required placeholder="예: 홍길동">
+          </div>
+          <div class="form-group">
+            <label>연락처 *</label>
+            <input type="tel" id="phone" required placeholder="010-0000-0000">
+          </div>
+          <div class="form-group">
+            <label>지점명 *</label>
+            <input type="text" id="branch" required placeholder="예: 강남점">
+          </div>
+          <div class="form-group">
+            <label>닉네임 (게시판 노출) *</label>
+            <input type="text" id="nickname" required placeholder="예: AI마스터">
+          </div>
+          <div class="form-group">
+            <label>작품 이름 (게시판 노출) *</label>
+            <input type="text" id="title" required placeholder="예: 몰디브에서 즐기는 맥주 한 잔">
+          </div>
+        </div>
+
+        <div class="form-group file-group">
+          <label>AI 이미지 파일 업로드 *</label>
+          <input type="file" id="image-file" accept="image/*" required>
+        </div>
+
+        <button type="submit" id="submit-btn" class="btn-submit">작품 등록하기</button>
+      </form>
+    </section>
+
+    <!-- 갤러리 및 투표 게시판 -->
+    <section class="gallery-section">
+      <h2>🖼️ 입주사 작품 갤러리 & 투표</h2>
+      <p class="gallery-desc">마음에 드는 작품에 투표(❤️)해 주세요!</p>
+      <div id="gallery-grid" class="gallery-grid">
+        <!-- JS로 동적 생성됨 -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© SPARKPLUS. All rights reserved. | 랜선 AI 바캉스 커뮤니티 이벤트</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
